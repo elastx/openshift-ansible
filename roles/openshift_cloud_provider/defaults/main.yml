@@ -6,4 +6,4 @@ openshift_gcp_multizone: False
 openshift_openstack_ca_file_path: '/etc/origin/cloudprovider/openstack.crt'
 openshift_cloudprovider_openstack_blockstorage_ignore_volume_az: false
 openshift_cloudprovider_openstack_lb_use_octavia: false
-
+openshift_cloudprovider_openstack_lb_manage_security_groups: false
