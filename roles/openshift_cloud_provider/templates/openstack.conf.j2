@@ -26,6 +26,7 @@ use-octavia = {{ openshift_cloudprovider_openstack_lb_use_octavia | bool | terna
 manage-security-groups = {{ openshift_cloudprovider_openstack_lb_manage_security_groups | bool | ternary('yes', 'no') }}
 node-security-group = {{ openshift_cloudprovider_openstack_lb_node_security_group_id }}
 {% endif %}
+{% endif %}
 [BlockStorage]
 ignore-volume-az = {{ openshift_cloudprovider_openstack_blockstorage_ignore_volume_az | bool | ternary('yes', 'no') }}
 {% if openshift_cloudprovider_openstack_blockstorage_version is defined %}
