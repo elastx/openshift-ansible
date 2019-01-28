@@ -1,0 +1,9 @@
+---
+- hosts: nodes
+  become: true
+  tasks:
+    - name: Get redhat ca certificate
+      get_url:
+        url: https://raw.githubusercontent.com/candlepin/subscription-manager/master/etc-conf/ca/redhat-uep.pem
+        dest: /etc/rhsm/ca/redhat-uep.pem
+
