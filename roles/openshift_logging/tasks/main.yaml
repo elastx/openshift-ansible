@@ -10,7 +10,8 @@
   check_mode: no
   tags: logging_init
 
-- debug: msg="Created temp dir {{mktemp.stdout}}"
+- debug:
+    msg: "Created temp dir {{mktemp.stdout}}"
 
 - name: Create local temp directory for doing work in
   local_action: command mktemp -d /tmp/openshift-logging-ansible-XXXXXX
